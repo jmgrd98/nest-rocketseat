@@ -10,7 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User{
+model Usuario{
   id String @id
   name String
   function String
