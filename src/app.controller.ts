@@ -1,5 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { PrismaService } from './database/prisma.service';
+import { Post, Put } from '@nestjs/common/decorators';
 
 @Controller('app')
 export class AppController {
@@ -14,11 +15,15 @@ export class AppController {
         function: 'Codar',
       }
     })
-    return user
+    return user;
   }
 
   @Get('goodbye')
   getGoodbye(): string {
     return 'goodbye';
   }
+
+  // @Post(){
+
+  // }
 }
